@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>500</title>
+</head>
+<body>
+<h1>500 Bad Request</h1>
+
+<a target="_self" href="/">返回首页</a>
+<p>Detail: {{ .Message }}</p>
+
+<script>
+    setTimeout(function () {
+        location.replace('/');
+    }, 10000);
+</script>
+</body>
+</html>
